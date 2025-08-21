@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Real Analysis - Course Information</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        .info-section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+        
+        .info-section h2 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .instructor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .instructor-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .instructor-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        
+        .instructor-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        
+        .instructor-card strong {
+            color: #2c3e50;
+        }
+        
+        .instructor-card a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .instructor-card a:hover {
+            text-decoration: underline;
+        }
+        
+        .schedule-info {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        
+        .textbook {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        
+        .exam-schedule {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .exam-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #dee2e6;
+        }
+        
+        .exam-item h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .grading-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .grade-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #28a745;
+        }
+        
+        .grade-item .percentage {
+            font-size: 2em;
+            font-weight: bold;
+            color: #28a745;
+        }
+        
+        .grade-item .category {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 5px;
+        }
+        
+        .policy-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #6c757d;
+        }
+        
+        .warning-box {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #dc3545;
+            margin: 15px 0;
+        }
+        
+        .warning-box strong {
+            color: #721c24;
+        }
+        
+        .links-section a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 15px;
+            display: inline-block;
+        }
+        
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 40px;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .instructor-grid,
+            .exam-schedule,
+            .grading-breakdown {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Introduction to Real Analysis</h1>
+        <div class="subtitle">MAT 640:311H, Fall 2025</div>
+        <div class="subtitle">Professor: <a href="https://math.rutgers.edu/~alexk" target="_blank" style="color: white; text-decoration: underline;">Alex Kontorovich</a></div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Course Website</h2>
+        <p><strong>Canvas:</strong> <a href="https://canvas.rutgers.edu" target="_blank">https://canvas.rutgers.edu</a></p>
+    </div>
+    
+    <div class="info-section">
+        <h2>Instruction Team</h2>
+        <div class="instructor-grid">
+            <div class="instructor-card">
+                <h3>Professor</h3>
+                <p><strong>Name:</strong> <a href="http://math.rutgers.edu/~alexk/" target="_blank">Alex Kontorovich</a></p>
+                <p><strong>Office:</strong> Hill 630</p>
+                <p><strong>Email:</strong> <a href="mailto:alex.kontorovich@rutgers.edu">alex.kontorovich@rutgers.edu</a></p>
+                <p><strong>Office Hours:</strong> Tuesdays 1-2 pm, or by appointment</p>
+            </div>
+            
+            <div class="instructor-card">
+                <h3>Grader</h3>
+                <p><strong>Name:</strong> Trung Nghia Nguyen</p>
+                <p><strong>Email:</strong> <a href="mailto:tn325@math.rutgers.edu">tn325@math.rutgers.edu</a></p>
+                <p><strong>Office Hours:</strong> TBA, or by appointment</p>
+            </div>
+            
+            <div class="instructor-card">
+                <h3>Problem Sessions</h3>
+                <p><strong>Instructor:</strong> Mitchell Bast</p>
+                <p><strong>Email:</strong> <a href="mailto:mjb582@math.rutgers.edu">mjb582@math.rutgers.edu</a></p>
+                <p><strong>Time:</strong> TBA</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Lectures</h2>
+        <div class="schedule-info">
+            <p><strong>Schedule:</strong> Tuesday & Friday, 10:20 - 11:40 AM</p>
+            <p><strong>Location:</strong> Hill 423</p>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Textbook</h2>
+        <div class="textbook">
+            <p><strong>Required Text:</strong> Stein and Shakarchi, <em>Complex Analysis</em></p>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Course Structure</h2>
+        <p>Until at least the first midterm, we will run an experimental "flipped" classroom experience:</p>
+        <ul>
+            <li><strong>Pre-Class:</strong> Students will watch recorded lectures <em>in groups</em> of their choosing</li>
+            <li><strong>During Viewing:</strong> Pause, rewind, or speed up as needed; discuss questions with classmates</li>
+            <li><strong>Notes Required:</strong> Write down key definitions, theorems, and proof ideas, plus any questions</li>
+            <li><strong>Upload:</strong> Submit PDF scan of notes to Canvas before each meeting</li>
+            <li><strong>Class Time:</strong> Review material, Q&A, discuss previous problem sets, and take brief quizzes</li>
+        </ul>
+    </div>
+    
+    <div class="info-section">
+        <h2>Assignments & Policies</h2>
+        <div class="policy-box">
+            <h3>Weekly Assignments</h3>
+            <p>Required reading and homework assignments are due <strong>Fridays at the beginning of class</strong>. Late homework will not be accepted.</p>
+        </div>
+        
+        <div class="policy-box">
+            <h3>Homework Policy</h3>
+            <p>You are <strong>strongly encouraged</strong> to collaborate with other students on solving problems. However, you must write up your final solutions independently. List the names of collaborators at the top of your first page.</p>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Examinations</h2>
+        <div class="exam-schedule">
+            <div class="exam-item">
+                <h4>Midterm I</h4>
+                <p>Friday, October 6th</p>
+                <p><em>In-class</em></p>
+            </div>
+            <div class="exam-item">
+                <h4>Midterm II</h4>
+                <p>Friday, November 10th</p>
+                <p><em>In-class</em></p>
+            </div>
+            <div class="exam-item">
+                <h4>Final Exam</h4>
+                <p>Due Friday, December 15th</p>
+                <p><em>Take-home</em></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Grading</h2>
+        <div class="grading-breakdown">
+            <div class="grade-item">
+                <div class="percentage">40%</div>
+                <div class="category">Final Exam</div>
+            </div>
+            <div class="grade-item">
+                <div class="percentage">30%</div>
+                <div class="category">Midterms<br><small>(15% each)</small></div>
+            </div>
+            <div class="grade-item">
+                <div class="percentage">15%</div>
+                <div class="category">Quizzes</div>
+            </div>
+            <div class="grade-item">
+                <div class="percentage">15%</div>
+                <div class="category">Homework</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Academic Policies</h2>
+        
+        <div class="warning-box">
+            <h3>Academic Dishonesty</h3>
+            <p><strong>Any work suspected of being copied or otherwise fraudulently represented will immediately result in a failing grade for the course</strong> and will be prosecuted to the highest extent allowed by University Policy.</p>
+        </div>
+        
+        <div class="policy-box">
+            <h3>Academic Integrity Resources</h3>
+            <div class="links-section">
+                <a href="http://www.scc.rutgers.edu/douglass/sal/plagiarism/intro.html" target="_blank">Interactive Tutorial on Plagiarism</a>
+                <a href="http://www.libraries.rutgers.edu/rul/lib_instruct/instruct_document.shtml" target="_blank">Documentation Guidelines</a>
+            </div>
+        </div>
+        
+        <div class="policy-box">
+            <h3>Student Absence Policy</h3>
+            <p>Students are expected to attend all classes. For absences, use the University absence reporting website: <a href="https://sims.rutgers.edu/ssra/" target="_blank">https://sims.rutgers.edu/ssra/</a></p>
+        </div>
+        
+        <div class="policy-box">
+            <h3>Disability Accommodations</h3>
+            <p>Full disability policies: <a href="http://disabilityservices.rutgers.edu/" target="_blank">http://disabilityservices.rutgers.edu/</a></p>
+            <p>Accommodation requests: <a href="http://disabilityservices.rutgers.edu/request.html" target="_blank">http://disabilityservices.rutgers.edu/request.html</a></p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Alex Kontorovich, Rutgers University Mathematics Department</p>
+        <p>Course materials are freely available for educational use</p>
+    </div>
+</body>
+</html>
