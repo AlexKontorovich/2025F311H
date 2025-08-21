@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Euclidean Geometry</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        .instructor-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .course-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .course-table th {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: normal;
+            font-size: 1.1em;
+        }
+        
+        .course-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        
+        .course-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .lecture-number {
+            font-weight: bold;
+            color: #2c3e50;
+            min-width: 60px;
+        }
+        
+        .lecture-title {
+            font-weight: bold;
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+        
+        .lecture-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        
+        .link-button {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 2px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+        
+        .youtube-link {
+            background-color: #ff4444;
+            color: white;
+        }
+        
+        .youtube-link:hover {
+            background-color: #cc0000;
+            color: white;
+        }
+        
+        .notes-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .notes-link:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+        
+        .coming-soon {
+            background-color: #95a5a6;
+            color: white;
+            cursor: not-allowed;
+        }
+        
+        .resources {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .resources h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .resources ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .resources li {
+            margin: 8px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .resources a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .resources a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 40px;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .course-table {
+                font-size: 0.9em;
+            }
+            
+            .link-button {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Formal Euclidean Geometry</h1>
+        <div class="subtitle">Rutgers Math Corps 2025</div>
+        <div class="subtitle">Professor: <a href="https://math.rutgers.edu/~alexk" target="_blank">Alex Kontorovich</a> </div>
+    </div>
+    
+    <div class="instructor-info">
+        <p><strong>Course Description:</strong> This course explores classical Euclidean geometry through a modern lens, 
+        using the Lean4 proof assistant to formalize definitions, theorems, and proofs. Students will gain deep 
+        understanding of geometric reasoning while learning contemporary approaches to mathematical formalization.</p>
+    </div>
+    
+    <table class="course-table">
+        <thead>
+            <tr>
+                <th>Lecture</th>
+                <th>Topic & Content</th>
+                <th>Lecture Video</th>
+                <th>Lecture Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="lecture-number">07/07/25</td>
+                <td>
+                    <div class="lecture-title">Lecture 1</div>
+                    <div class="lecture-description">
+                        Engineering vs Mathematics<br>
+Truth + Proof<br>
+Truth + Proof + Axioms<br>
+<a href="http://aleph0.clarku.edu/~djoyce/java/elements/bookI/bookI.html" target="_blank">Euclid's Elements</a> <br>
+The Parallel Postulate
+                    </div>
+                </td>
+                <td>
+                    <a href="https://youtu.be/JAIN7FQwr_8" target="_blank"> <img src="https://img.youtube.com/vi/JAIN7FQwr_8/maxresdefault.jpg" width="300">
+                    </a>
+                </td>
+                <td>
+                    <a href="Lecture1.html" class="link-button notes-link" target="_blank">📝 Lecture 1 Notes</a>
+                </td>
+            </tr>
+
+        
+                    <tr>
+                <td class="lecture-number">07/08/25</td>
+                <td>
+                    <div class="lecture-title">Lecture 2</div>
+                    <div class="lecture-description">
+Proposition I.1 <br> Platonic Solids<br> Hyperbolic Geometry <br> Parallel Postulate                    </div>
+                </td>
+                <td>
+                    <a href="https://youtu.be/4wDJfuPr-Yo" target="_blank"> <img src="https://img.youtube.com/vi/4wDJfuPr-Yo/maxresdefault.jpg" width="300">
+                    </a>
+                </td>
+                <td>
+                    <a href="Lecture2.html" class="link-button notes-link" target="_blank">📝 Lecture 2 Notes</a>
+                </td>
+            </tr>
+
+
+                    <tr>
+                <td class="lecture-number">07/09/25</td>
+                <td>
+                    <div class="lecture-title">Lecture 3</div>
+                    <div class="lecture-description">
+In Non-Euclidean Geometry, AAA Implies Congruence<br>
+Gap in Euclid's Prop I.1 <br>
+David Hilbert's Ideas on Formalization <br>
+Undefined Terms<br>
+Beginning Formalization                    </div>
+                </td>
+                <td>
+                    <a href="https://youtu.be/wN4vNqoeUMM" target="_blank"> <img src="https://img.youtube.com/vi/wN4vNqoeUMM/maxresdefault.jpg" width="300">
+                    </a>
+                </td>
+                <td>
+                    <a href="Lecture3.html" class="link-button notes-link" target="_blank">📝 Lecture 3 Notes</a>
+                </td>
+            </tr>
+
+
+            
+        </tbody>
+    </table>
+    
+    <div class="resources">
+        <h3>Course Resources</h3>
+        <ul>
+            <li><strong>📚 Primary Text:</strong> <a href="https://mathcs.clarku.edu/~djoyce/java/elements/elements.html" target="_blank">Euclid's Elements (Joyce Edition)</a></li>
+            <li><strong>📺 Codespaces:</strong> <a href="https://codespaces.new/leanprover-community/mathlib4" target="_blank">Lean's Math library codespace</a></li>
+            <li><strong>📖 Mathlib:</strong> <a href="https://leanprover-community.github.io/mathlib4_docs/" target="_blank">Mathlib4 Documentation</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Alex Kontorovich, Rutgers University Mathematics Department</p>
+        <p>Course materials are freely available for educational use</p>
+    </div>
+</body>
+</html>
